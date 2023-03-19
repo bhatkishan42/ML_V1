@@ -23,7 +23,7 @@ class DataIngestion:
         
         try:
             # Read the dataset as a Pandas DataFrame
-            df = pd.read_csv("DB/Data/stud.csv")
+            df = pd.read_csv('Db/Data/stud.csv')
             logging.info("Read the dataset as a DataFrame")
 
             # Create the necessary directories for storing the data
