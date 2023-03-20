@@ -17,7 +17,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('artifacts',"proprocessor_1.pkl")
 
 class DataTransformation:
     def __init__(self):
@@ -125,11 +125,11 @@ class DataTransformation:
             raise CustomException(e,sys)
         
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
 
-#     obj = DataIngestion()
+    obj = DataIngestion()
 
-#     train_data,test_data = obj.initiate_data_ingestion()
+    train_data,test_data = obj.ingestion()
 
-#     datatransformation = DataTransformation()
-#     datatransformation.initiate_data_transformation(train_data,test_data)
+    datatransformation = DataTransformation()
+    datatransformation.initiate_data_transformation(train_data,test_data)

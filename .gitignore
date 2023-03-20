@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+src/components/ingest_data.py
+
+src/components/transform_data.py
+src/components/ingest_data.py
+
+artifacts_2
